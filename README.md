@@ -1,4 +1,4 @@
-# Scrum Agents
+# AI Workforce
 
 An AI agent org that listens to your team meetings, understands your project
 context, and turns the discussion into assigned, PM-approved tickets.
