@@ -1,0 +1,10 @@
+# Scrum Agents — Python agent service (L3/L4 + L1 client)
+# Pinned loosely; the agent frameworks constrain most transitive deps.
+
+crewai>=0.86            # L4 — role-based multi-agent crews
+langgraph>=0.2          # L3 — stateful agent runtime
+nats-py>=2.7            # L1 — NATS client (the gossip bus)
+mcp>=1.2                # L2 — Model Context Protocol client
+openai>=1.50            # LLM access (Ollama via OpenAI-compatible API, or real API)
+psycopg[binary]>=3.2    # Postgres — mirror the bus + read shared state
+python-dotenv>=1.0      # .env loading

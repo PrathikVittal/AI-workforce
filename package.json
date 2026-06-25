@@ -1,0 +1,40 @@
+{
+  "name": "scrum-agents",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/lib/db/migrate.ts",
+    "db:seed": "tsx src/lib/db/seed.ts",
+    "db:drop": "tsx src/lib/db/drop.ts",
+    "db:reset": "npm run db:drop && npm run db:migrate && npm run db:seed"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.3",
+    "@types/pg": "^8.20.0",
+    "drizzle-orm": "^0.45.2",
+    "nanoid": "^5.1.11",
+    "next": "^15.5.19",
+    "openai": "^6.41.0",
+    "pg": "^8.21.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3",
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "^0.31.10",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
